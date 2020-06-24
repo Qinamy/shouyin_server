@@ -1,0 +1,5 @@
+@include('header')
+@include('device.index.script')
+@include('device.index.search')
+@include('device.index.list')
+@include('bottom')
