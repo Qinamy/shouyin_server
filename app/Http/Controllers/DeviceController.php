@@ -57,4 +57,12 @@ class DeviceController extends BaseController
         $this->setResponseValue($array_response);
     }
 
+    public function pageTest(Request $request)
+    {
+        Log::notice('@@'.PHP_EOL.PHP_EOL.'index'.$request->input('mobile'));
+        $array_response = array(
+            'msg' => '成功'
+        );
+        $this->setResponseValue($array_response);
+    }
 }
