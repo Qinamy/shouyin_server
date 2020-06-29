@@ -15,7 +15,7 @@ class SpController extends BaseController
     public function sync(Request $request)
     {
 
-        $params = SpService::getParams($request,['shop_id','user_id']);
+        $params = SpService::getParams($request,['shop_id']);
 
         if(!empty($params['msg'])){
             JsonResultException::throwJsonResultException(300,$params['msg']);

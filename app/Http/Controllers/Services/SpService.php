@@ -6,11 +6,10 @@ namespace App\Http\Controllers\Services;
 
 class SpService
 {
-    public static $all_param_names = ['barcode','cashier_id','goods','shop_id','user_id'];
+    public static $all_param_names = ['barcode','cashier_id','goods','shop_id'];
 
     const property_translate = [
         'shop_id' => '店铺ID',
-        'user_id' => '用户ID',
         'price' => '售价',
         'barcode' => '条码'
     ];
