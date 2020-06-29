@@ -31,8 +31,10 @@ class UtilService
 
         $msg = '';
         foreach($necessary_param_names as $name)
-            if(empty($params[$name]))
-                $msg= ( empty($msg) ? '' : $msg.',' ). $property_translate[$name];
+            if(empty($params[$name])) {
+                $msg = (empty($msg) ? '' : $msg . ',') . $property_translate[$name];
+            }
+
 
         if(!empty($msg))
             return [
